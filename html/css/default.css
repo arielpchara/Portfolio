@@ -1,0 +1,153 @@
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+h2,h2,h3,h4 {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+section {
+	display: block;
+}
+section.um {
+	position: relative;
+	background: url('../img/background.png') top center no-repeat;
+	width: 100%;
+	height: 100%;
+}
+section.um .eu {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 300px;
+	margin: -180px 0 0 -180px;
+	background: url("../img/eu.jpg") center no-repeat;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	background-size: cover;
+	border: 30px solid #FFF;
+}
+section.um h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	width: 300px;
+	margin: 180px 0 0 -150px;
+	color: #FFF;
+	font-size: 4em;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+section.logo {
+	position: relative;
+	text-align: center;
+}
+section.logo .centro {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	margin: -150px 0 0 -100px;
+}
+section.logo .centro h1 {
+	background: url("../img/logoarielpchara.png") center no-repeat;
+	width: 200px;
+	height: 200px;
+	background-size: contain;
+}
+section.logo a {
+	text-decoration: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 2em;
+	color: #555;
+}
+
+section.dois {
+	padding: 2em 0 2em 50%;
+	margin-left: -150px;
+}
+section.dois article {
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+}
+section.dois article .ano {
+	display: block;
+	text-align: left;
+	position: relative;
+	margin-left: 22px;
+}
+section.dois article h3 {
+	margin: 1em 0 0 -22px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	text-align: center;
+	font-size: .8em;
+	color: #FFF;
+	background: #CCC;
+	width: 40px;
+	line-height: 40px;
+	position: relative;
+	border: 2px solid #FFF;
+}
+section.dois article .ano.a2014 h3 {
+	background: #FC5;
+}
+section.dois article .ano:hover h3 {
+	color: #000;
+	border: 2px solid #FC0;
+	background: #FFF;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+section.dois article .job {
+	padding: 1em;
+	
+}
+section.dois article .ligacao {
+	position: absolute;
+	width: 4px;
+	height: 100%;
+	top: 0;
+	left: 22px;
+	margin-left: -2px;
+	background: #CCC;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+section.tres {
+	
+}
+
+
+@media only screen and (max-width : 320px) {
+	
+	section.um .eu {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 200px;
+		height: 200px;
+		margin: -120px 0 0 -120px;
+		background: url("../img/eu.jpg") center no-repeat;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		border-radius: 100%;
+		background-size: cover;
+		border: 20px solid #FFF;
+	}
+}
