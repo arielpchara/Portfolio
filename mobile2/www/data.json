@@ -1,0 +1,36 @@
+{
+	"profile":{
+		"foto":"images/me.jpg",
+		"text":"Montei meu primeiro computador aos 14 anos.<br>Meu primeiro código foi um HTML usando Bloco de Notas.<br>JavaScript foi a primeira linguagem de programação.<br>PHP e MySql me deram meu primeiro estágio.<br>Aprendi CSS.<br>Programei sistemas inteiros sozinhos.<br>Por um tempo fui desenvolvedor front-end.<br>Outro back-end.<br>Estudei propaganda.<br>Mas nunca abandonei o <codigo/> <br>Aprendi programar robôs só pra me distrair.<br>E nunca desisti de aprender."
+	},
+	"wisdom":{
+		"rating":[ {
+			"knowledge" : "PHP",
+			"rate" : 5
+		}, {
+			"knowledge" : "HTML5",
+			"rate" : 5
+		}, {
+			"knowledge" : "CSS3",
+			"rate" : 5
+		}, {
+			"knowledge" : "JavaScript",
+			"rate" : 4
+		}, {
+			"knowledge" : "jQuery",
+			"rate" : 5
+		}, {
+			"knowledge" : "AngularJS",
+			"rate" : 3
+		}, {
+			"knowledge" : "Node.js",
+			"rate" : 2
+		}, {
+			"knowledge" : "Git",
+			"rate" : 4
+		}, {
+			"knowledge" : "Linux/Unix",
+			"rate" : 3
+		} ]
+	}
+}
