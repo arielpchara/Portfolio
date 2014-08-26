@@ -53,18 +53,24 @@ $(function(){
 		</section>
 		
 		<section class="dois" ng-controller="experiences">
-			<h2>Experiências</h2>
+			
 			<article>
 				<div class="ligacao"></div>
-				<div class="ano a{{exp.time[0]}}" ng-repeat="exp in itens|orderBy:order:true">
-				<h3>{{exp.time[0]}}</h3>
-				<div class="job">
-					<h4>{{exp.name}}</h4>
-					<em><small>{{exp.level}}</small></em>
-					<ul>
-					<li ng-repeat="code in exp.code">{{code}}</li>
-					</ul>
+				<div class="ano hoje">
+					<div class="job">
+						<h2>Experiências</h2>
+					</div>
+					<h3>Hoje</h3>
 				</div>
+				<div class="ano" ng-repeat="exp in itens|orderBy:order:true">
+					<div class="job">
+						<h4>{{exp.name}}</h4>
+						<em><small>{{exp.level}}</small></em>
+						<ul>
+							<li ng-repeat="code in exp.code">{{code}}</li>
+						</ul>
+					</div>
+					<h3>{{exp.time[0]}}</h3>
 				</div>
 			</article>
 		</section>
