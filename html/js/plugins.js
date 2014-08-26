@@ -23,13 +23,10 @@
 		});
 		return this;
 	};
-	
-	
 
 	window.addEventListener("hashchange", function(){
 		var hash = location.hash;
 		$.scrollToHash(hash);
-		location.hash = "";
 	}, false);
 	
 	$.scrollToHash = function(hash,time){

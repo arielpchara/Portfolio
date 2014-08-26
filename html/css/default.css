@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Icons';
+  src: url(../fonts/icons.eot);
+  src: url(../fonts/icons.eot?#iefix) format('embedded-opentype'), url(../fonts/icons.svg#icons) format('svg'), url(../fonts/icons.woff) format('woff'), url(../fonts/icons.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
 body {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
@@ -15,6 +25,60 @@ h2,h2,h3,h4 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	margin-bottom: 0px;
 }
+aside.side-menu {
+	position: fixed;
+	height: 100%;
+	top: 0;
+	background: #223;
+	min-width: 200px;
+    -webkit-transform: translate3d(-99%, 0, 0);
+    transform: translate3d(-98%, 0, 0);
+    -webkit-transition-duration: .5s; /* Safari */
+    transition-duration: .5s;
+}
+aside.side-menu.show {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+aside.side-menu .orelha {
+	position: absolute;
+	line-height: 50px;
+	width: 50px;
+	right: -40px;
+	top: 50%;
+	margin-top: -25px;
+	background: #223;
+	border-radius: 0 10px 10px 0;
+	cursor: pointer;
+	color: #FFF;
+	text-align: center;
+	font-family: 'Icons';
+}
+aside.side-menu .orelha:before {
+  content: "\f00b";
+}
+aside.side-menu ul {
+	padding: 0;
+	position: absolute;
+	top: 10%;
+	width: 100%;
+}
+aside.side-menu ul li a {
+	display: block;
+	line-height: 2.2em;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: 0 1em;
+    transition: all 300ms ease-in-out;
+    text-decoration: none;
+}
+aside.side-menu ul li a:hover {
+	background: #445;
+	padding-left: 1.5em;
+    transition: all 300ms ease-in-out;
+}
+
 section {
 	display: block;
 }
@@ -24,6 +88,7 @@ section.um {
 	width: 100%;
 	height: 100%;
 	text-align: center;
+	background-size: cover;
 }
 section.um .eu {
 	position: absolute;
@@ -62,20 +127,12 @@ section.um .eu a {
 	-moz-opacity:0;
 	-khtml-opacity: 0;
 	opacity: 0;
-    -webkit-transition: opacity 300ms ease-in-out;
-    -moz-transition: opacity 300ms ease-in-out;
-    -o-transition: opacity 300ms ease-in-out;
-    -ms-transition: opacity 300ms ease-in-out;
     transition: opacity 300ms ease-in-out;
 }
 section.um .eu:hover a {
 	-moz-opacity: 1;
 	-khtml-opacity: 1;
 	opacity: 1;
-    -webkit-transition: opacity 300ms ease-in-out;
-    -moz-transition: opacity 300ms ease-in-out;
-    -o-transition: opacity 300ms ease-in-out;
-    -ms-transition: opacity 300ms ease-in-out;
     transition: opacity 300ms ease-in-out;
 }
 section.logo {
@@ -121,8 +178,6 @@ section.dois article .ano {
 }
 section.dois article h3 {
 	margin: 0 0 1em -22px;
-	-webkit-border-radius: 100% 0 100% 100%;
-	-moz-border-radius: 100% 0 100% 100%;
 	border-radius: 100% 0 100% 100%;
 	text-align: center;
 	font-size: .8em;
@@ -149,10 +204,6 @@ section.dois article .ano:hover h3 {
 	color: #000;
 	border: 2px solid #FC0;
 	background: #FFF;
-    -webkit-transition: all 300ms linear;
-    -moz-transition: all 300ms linear;
-    -o-transition: all 300ms linear;
-    -ms-transition: all 300ms linear;
     transition: all 300ms linear;
 }
 section.dois article .job {
@@ -191,21 +242,34 @@ section.tres {
 	
 }
 
-
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 768px) {
 	
 	section.um .eu {
-		position: absolute;
-		top: 50%;
-		left: 50%;
 		width: 200px;
 		height: 200px;
-		margin: -120px 0 0 -120px;
-		background: url("../img/eu.jpg") center no-repeat;
-		-webkit-border-radius: 100%;
-		-moz-border-radius: 100%;
-		border-radius: 100%;
-		background-size: cover;
-		border: 20px solid #FFF;
+		margin: -112px 0 0 -112px;
+		border: 12px solid #FFF;
 	}
+	
+	section.um h1 {
+		margin-top: 120px;
+		font-size: 3em;
+	}
+	
+	section.um .eu a {
+		line-height: 200px;
+		font-size: 3em;
+	}
+	aside.side-menu .orelha {
+		bottom: 0;
+		border-radius: 0 10px 0 0;
+		top: auto;
+	}
+	aside.side-menu ul {
+		bottom: 10%;
+		top: auto;
+		position: absolute;
+		width: 100%;
+	}
+	
 }

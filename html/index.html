@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="viewport" content="width=device-width">
 
 <!-- ICONE -->
 <link rel="icon" href="img/icone.png" type="image/png">
@@ -35,6 +35,13 @@ $(function(){
 	FastClick.attach(document.body);
 	$("section.um").parallax(document).fullHeight();
 	$("section.logo").fullHeight();
+	var aside = $("aside.side-menu");
+	aside.find(".orelha").click(function(){
+		aside.toggleClass('show');
+	});
+	aside.find(".menu a").click(function(){
+		aside.removeClass('show');
+	});
 })
 </script>
 <title>Ariel Pchara</title>
@@ -46,48 +53,57 @@ $(function(){
 
 <body>
 	
-	<div id="wrapper">
+	<section class="um" scroll="inicio">
+		<div class="centro">
+			<div class="eu"><a href="#experiencias">START</a></div>
+			<h1>Ariel Pchara</h1>
+		</div>
+	</section>
 	
-		<section class="um">
-			<div class="centro">
-				<div class="eu"><a href="#experiencias">START</a></div>
-				<h1>Ariel Pchara</h1>
-			</div>
-		</section>
-		
-		<section class="dois" ng-controller="experiences" scroll="experiencias">
-			
-			<article>
-				<div class="ligacao"></div>
-				<div class="ano hoje">
-					<div class="job">
-						<h2>Experiências</h2>
-					</div>
-					<h3>Hoje</h3>
+	<section class="dois" ng-controller="experiences" scroll="experiencias">
+		<article>
+			<div class="ligacao"></div>
+			<div class="ano hoje">
+				<div class="job">
+					<h2>Experiências</h2>
 				</div>
-				<div class="ano" ng-repeat="exp in itens|orderBy:order:true">
-					<div class="job">
-						<h4>{{exp.name}}</h4>
-						<em><small>{{exp.level}}</small></em>
-						<ul>
-							<li ng-repeat="code in exp.code">{{code}}</li>
-						</ul>
-					</div>
-					<h3>{{exp.time[0]}}</h3>
-				</div>
-			</article>
-		</section>
-		
-		<section class="tres">
-		</section>
-		
-		<section class="logo">
-			<div class="centro">
-				<h1></h1>
-				<a href="mailto:ariel@pchara.com">ariel@pchara.com</a><br/>
-				<a href="tel:+554891360411">+55 48 9136 0411</a>
+				<h3>Hoje</h3>
 			</div>
-		</section>
-	</div>
+			<div class="ano" ng-repeat="exp in itens|orderBy:order:true">
+				<div class="job">
+					<h4>{{exp.name}}</h4>
+					<em><small>{{exp.level}}</small></em>
+					<ul>
+						<li ng-repeat="code in exp.code">{{code}}</li>
+					</ul>
+				</div>
+				<h3>{{exp.time[0]}}</h3>
+			</div>
+		</article>
+	</section>
+	
+	<section class="tres" scroll="portfolio">
+	
+	</section>
+	
+	<section class="logo"  scroll="contato">
+		<div class="centro">
+			<h1></h1>
+			<a href="mailto:ariel@pchara.com">ariel@pchara.com</a><br/>
+			<a href="tel:+554891360411">+55 48 9136 0411</a>
+		</div>
+	</section>
+		
+	<aside class="side-menu">
+		<a class="orelha"></a>
+		<nav class="menu">
+			<ul>
+				<li><a href="#inicio">inicio</a></li>
+				<li><a href="#experiencias">experiências</a></li>
+				<li><a href="#portfolio">portfolio</a></li>
+				<li><a href="#contato">contato</a></li>
+			</ul>
+		</nav>
+	</aside>
 </body>
 </html>
