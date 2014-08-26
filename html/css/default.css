@@ -3,7 +3,9 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
-
+a {
+	outline: none; 
+}
 ul {
 	padding: 0;
 	list-style: none;
@@ -21,6 +23,7 @@ section.um {
 	background: url('../img/background.png') top center no-repeat;
 	width: 100%;
 	height: 100%;
+	text-align: center;
 }
 section.um .eu {
 	position: absolute;
@@ -40,12 +43,40 @@ section.um h1 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	text-align: center;
 	width: 300px;
 	margin: 180px 0 0 -150px;
 	color: #FFF;
 	font-size: 4em;
 	font-family: 'Open Sans Condensed', sans-serif;
+}
+section.um .eu a {
+	position: absolute;
+	width: 100%;
+	line-height: 300px;
+	left: 0;
+	color: #FFF;
+	font-size: 4em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-decoration: none;
+	-moz-opacity:0;
+	-khtml-opacity: 0;
+	opacity: 0;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    -o-transition: opacity 300ms ease-in-out;
+    -ms-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+}
+section.um .eu:hover a {
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    -o-transition: opacity 300ms ease-in-out;
+    -ms-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
 }
 section.logo {
 	position: relative;
@@ -161,7 +192,7 @@ section.tres {
 }
 
 
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 500px) {
 	
 	section.um .eu {
 		position: absolute;

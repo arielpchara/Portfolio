@@ -24,4 +24,23 @@
 		return this;
 	};
 	
+	
+
+	window.addEventListener("hashchange", function(){
+		var hash = location.hash;
+		$.scrollToHash(hash);
+		location.hash = "";
+	}, false);
+	
+	$.scrollToHash = function(hash,time){
+		var link = hash.replace('#', '');
+		time = time==null?1000:time;
+		if( link.search("\/") > 0){
+			parts = link.split("/");
+			link = parts[0];
+		}
+		$(document.body).scrollTo($("section[scroll='"+link+"']"), time);
+	};
+	
+	
 })(jQuery);
