@@ -24,10 +24,6 @@
 		return this;
 	};
 
-	window.addEventListener("hashchange", function(){
-		var hash = location.hash;
-		$.scrollToHash(hash);
-	}, false);
 	
 	$.scrollToHash = function(hash,time){
 		var link = hash.replace('#', '');
@@ -39,5 +35,17 @@
 		$(document.body).scrollTo($("section[scroll='"+link+"']"), time);
 	};
 	
+	window.addEventListener("hashchange", function(){
+		var hash = location.hash;
+		$.scrollToHash(hash);
+	}, false);
+	
+	$.showMenu = function(area,menu,proximo){
+		$(area).mousemove(function(event){
+			if( event.pageX < proximo ){
+				menu.addClass('show');
+			}
+		});
+	};
 	
 })(jQuery);

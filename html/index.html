@@ -35,13 +35,14 @@ $(function(){
 	FastClick.attach(document.body);
 	$("section.um").parallax(document).fullHeight();
 	$("section.logo").fullHeight();
-	var aside = $("aside.side-menu");
+	aside = $("aside.side-menu");
 	aside.find(".orelha").click(function(){
 		aside.toggleClass('show');
 	});
 	aside.find(".menu a").click(function(){
 		aside.removeClass('show');
 	});
+	//$.showMenu(document,aside,50);
 })
 </script>
 <title>Ariel Pchara</title>
@@ -105,5 +106,16 @@ $(function(){
 			</ul>
 		</nav>
 	</aside>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1039019-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
