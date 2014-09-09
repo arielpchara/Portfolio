@@ -63,17 +63,53 @@ aside.side-menu ul {
 	top: 10%;
 	width: 100%;
 }
+aside.side-menu ul li.logo {
+	display: block;
+	height: 50px;
+	background: url('../img/logo-white.png') center no-repeat;
+	background-size: contain;
+}
+
+nav.menu {
+	height: 100%;
+}
+
 aside.side-menu ul li a {
 	text-align: center;
 	display: block;
 	line-height: 2.2em;
 	color: #FFF;
 	text-transform: uppercase;
-	font-size: 3em;
+	font-size: 2em;
 	padding: 0 1em;
-    transition: all 200ms ease-in-out;
+    transition: all 600ms ease-in;
     text-decoration: none;
 }
+
+aside.side-menu ul li a i {
+	position: relative;
+    transition: all 700ms ease-in;
+    opacity: 0;
+}
+
+aside.side-menu ul li a i[class*='left'] {
+	margin-right: 10px;
+    -webkit-transform: translate3d(-50px, 0, 0);
+    transform: translate3d(-50px, 0, 0);
+}
+aside.side-menu ul li a i[class*='right'] {
+	margin-left: 10px;
+    -webkit-transform: translate3d(50px, 0, 0);
+    transform: translate3d(50px, 0, 0);
+}
+
+aside.side-menu ul li a:hover i {
+	opacity: .5;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: all 500ms ease-out;
+}
+
 aside.side-menu ul li a:hover {
 	background: rgba(255,255,225,.1);
     transition: all 200ms ease-in-out;
@@ -245,7 +281,14 @@ section.dois article .ligacao {
 }
 
 section.tres {
-	padding: 2% 10%;
+	text-align: center;
+	background-color: #69bf84;
+	padding: 4em 0;
+	color: #FFF;
+}
+section.tres main {
+	max-width: 684px;
+	margin: 0 auto;
 }
 section.tres:after {
   content: '';
@@ -253,14 +296,54 @@ section.tres:after {
   clear: both;
 }
 section.tres article {
-	float: left;
-	width: 200px;
-	height: 200px;
-	background-size: cover;
-	background-position: center;
-	margin: 5px;
+	display: inline-block;
+	width: 220px;
+	height: 380px;
+	margin: 4px;
 	color: #FFF;
+	position: relative;
+	background-color: #f49a60;
 }
+ section.tres article .background {
+ 	height: 100%;
+ 	width: 100%;
+ 	position: absolute;
+	background-size: cover;
+	background-position: left center;
+	-moz-opacity: .5;
+	-khtml-opacity:.5;
+	opacity: .5;
+    transition: all 300ms ease-in-out;
+ }
+ section.tres article a {
+ 	position: absolute;
+ 	top: 0;
+ 	right: 0;
+ 	color: #FFF;
+ 	line-height: 3em;
+ 	width: 3em;
+ 	background-color: #f49a60;
+ }
+section.tres article .bottom {
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+}
+ section.tres article .title {
+ 	color: #FFF;
+ 	line-height: 1.8em;
+ 	padding: 0 .5em;
+ 	margin: 0;
+ 	background-color: #f49a60;
+ 	font-size: 1.1em;
+ }
+
+section.tres article:hover .background {
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
 
 @media only screen and (max-width : 768px) {
 	

@@ -12,6 +12,7 @@
 <link rel="shortcut icon" href="img/icone.png"
 	type="image/vnd.microsoft.icon">
 
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <!-- FONTAFACE -->
 <link
 	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Open+Sans+Condensed:300'
@@ -60,10 +61,16 @@
 
 	<section class="tres" scroll="portfolio" ng-controller="portfolio">
 		<h2>Portfolio</h2>
-		<div>
-			<article ng-repeat="item in itens" class="{{item.tags | classes}}" style="background-image: url('{{item.imagem}}');" >
+		<main>
+			<article ng-repeat="item in itens" class="{{item.tags | classes}}" >
+				<div class="background" style="background-image: url('{{item.imagem}}');">
+				</div>
+				<a ng-if="item.link" href="{{item.link}}"><i class="fa fa-external-link"></i></a>
+				<div class="bottom">
+					<div class="title">{{item.titulo}}</div>
+				</div>
 			</article>
-		</div>
+		</main>
 	</section>
 
 	<section class="logo" scroll="contato">
@@ -78,6 +85,7 @@
 		<a class="orelha"></a>
 		<nav class="menu">
 			<ul>
+				<li class="logo"></li>
 				<li><a href="#inicio">inicio</a></li>
 				<li><a href="#experiencias">experiências</a></li>
 				<li><a href="#portfolio">portfolio</a></li>
@@ -119,9 +127,11 @@
 			aside.find(".orelha").click(function() {
 				aside.toggleClass('show');
 			});
-			aside.find(".menu a").click(function() {
+			aside.find(".menu").click(function() {
 				aside.removeClass('show');
 			});
+
+			$("nav.menu a").prepend('<i class="fa fa-angle-double-left"></i>').append('<i class="fa fa-angle-double-right"></i>');
 			//$.showMenu(document,aside,50);
 		});
 
