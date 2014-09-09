@@ -1,4 +1,4 @@
-var portifa = angular.module('portfolio', [ 'ngSanitize', 'ngResource' ]);
+var portifa = angular.module('portfolio', [ 'ngSanitize', 'ngResource']);
 
 /**
 portifa.factory('Profile', [ '$resource', function($resource) {
@@ -24,12 +24,17 @@ portifa.controller('profile', [ '$scope', '$http', 'Profile',
 			$scope.profile = Profile.get();
 		} ]);
 
+**/
+
+
+portifa.factory('Portfolio', [ '$resource', function($resource) {
+	return $resource('data/portfolio.json');
+} ]);
+
 portifa.controller('portfolio', [ '$scope', '$http', 'Portfolio',
 		function($scope, $http, Portfolio) {
 			$scope.itens = Portfolio.query();
-		} ]);
-**/
-
+		}]);
 
 portifa.factory('Experience', [ '$resource', function($resource) {
 	return $resource('data/experiences.json');
@@ -48,5 +53,10 @@ portifa.filter('plus', function() {
 portifa.filter('to', function() {
 	return function(value) {
 		return value.join(" - ");
+	}
+});
+portifa.filter('classes', function() {
+	return function(value) {
+		return value.join(" ");
 	}
 });

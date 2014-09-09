@@ -1,4 +1,5 @@
 (function($) {
+	
 	$.fn.parallax = function(scroll) {
 		var element = $(this);
 		$(scroll).scroll(function() {
@@ -9,6 +10,16 @@
 		});
 		return this;
 	};
+
+	$.fn.parallaxTop = function(){
+		var element = $(this);
+		$(document).scroll(function() {
+			var top = $(document).scrollTop();
+			element.css({
+				top : top/1.5 + 'px'
+			});
+		});
+	};
 	
 	$.fn.fullHeight = function() {
 		$docHeight = $(window).height();
@@ -17,9 +28,6 @@
 		var element = $(this);
 		element.css({
 			'height' : $docHeight - $footHeight - $headHeight
-		});
-		$(window).resize(function(){
-			element.fullHeight();
 		});
 		return this;
 	};
