@@ -181,18 +181,11 @@ section.um .eu:hover a {
 section.logo {
 	position: relative;
 	text-align: center;
+	padding: 5em 0;
 }
-section.logo .centro {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 200px;
-	height: 200px;
-	margin: -150px 0 0 -100px;
-}
-section.logo .centro h1 {
+
+section.logo h1 {
 	background: url("../img/logoarielpchara.png") center no-repeat;
-	width: 200px;
 	height: 200px;
 	background-size: contain;
 }
@@ -280,15 +273,30 @@ section.dois article .ligacao {
 	border-radius: 2px;
 }
 
+
+section main {
+	max-width: 684px;
+	margin: 0 auto;
+}
+section article.column {
+	display: inline-block;
+	height: 380px;
+	margin: 4px;
+	overflow: hidden;
+	position: relative;
+}
+section article.column.w1 {
+	width: 220px;
+}
+section article.column.w2 {
+	width: 448px;
+}
+
 section.tres {
 	text-align: center;
 	background-color: #69bf84;
 	padding: 4em 0;
 	color: #FFF;
-}
-section.tres main {
-	max-width: 684px;
-	margin: 0 auto;
 }
 section.tres:after {
   content: '';
@@ -296,14 +304,8 @@ section.tres:after {
   clear: both;
 }
 section.tres article {
-	display: inline-block;
-	width: 220px;
-	height: 380px;
-	margin: 4px;
 	color: #FFF;
-	position: relative;
 	background-color: #f49a60;
-	overflow: hidden;
 }
  section.tres article .background {
  	height: 100%;
