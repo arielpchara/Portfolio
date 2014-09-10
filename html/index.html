@@ -66,8 +66,9 @@
 				<div class="background" style="background-image: url('{{item.imagem}}');">
 				</div>
 				<a ng-if="item.link" href="{{item.link}}"><i class="fa fa-external-link"></i></a>
-				<div class="bottom">
+				<div class="details">
 					<div class="title">{{item.titulo}}</div>
+					<span ng-repeat="tag in item.tags">{{tag}} </span>
 				</div>
 			</article>
 		</main>
