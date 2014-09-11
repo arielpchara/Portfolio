@@ -13,10 +13,12 @@
 	type="image/vnd.microsoft.icon">
 
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<!-- FONTAFACE -->
-<link
-	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Open+Sans+Condensed:300'
-	rel='stylesheet' type='text/css'>
+<!-- FONTAFACE 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Poiret+One' rel='stylesheet' type='text/css'>
+-->
+
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500|Trocchi|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 <!-- ESTILO -->
 <link rel="stylesheet" href="css/default.css">
 <title>Ariel Pchara</title>
@@ -39,10 +41,25 @@
 	<section class="um" scroll="inicio">
 		<div class="centro">
 			<div class="eu">
-				<a href="#experiencias">START</a>
+				<a href="#portfolio">BORA!</a>
 			</div>
 			<h1>Ariel Pchara</h1>
 		</div>
+	</section>
+
+	<section class="tres" scroll="portfolio" ng-controller="portfolio">
+		<h2>Portfolio</h2>
+		<main>
+			<article ng-repeat="item in itens" class="{{item.tags | classes}} column w1" >
+				<div class="background" style="background-image: url('{{item.imagem}}');">
+				</div>
+				<div class="details"><a ng-if="item.link" href="{{item.link}}">
+					<i class="fa fa-external-link"></i></a>
+					<h4 class="title">{{item.titulo}}</h4>
+					<span ng-repeat="tag in item.tags">{{tag}} </span>
+				</div>
+			</article>
+		</main>
 	</section>
 
 	<section class="dois" ng-controller="experiences" scroll="experiencias">
@@ -67,25 +84,10 @@
 		</article>
 	</section>
 
-	<section class="tres" scroll="portfolio" ng-controller="portfolio">
-		<h2>Portfolio</h2>
-		<main>
-			<article ng-repeat="item in itens" class="{{item.tags | classes}} column w1" >
-				<div class="background" style="background-image: url('{{item.imagem}}');">
-				</div>
-				<a ng-if="item.link" href="{{item.link}}"><i class="fa fa-external-link"></i></a>
-				<div class="details">
-					<div class="title">{{item.titulo}}</div>
-					<span ng-repeat="tag in item.tags">{{tag}} </span>
-				</div>
-			</article>
-		</main>
-	</section>
-
 	<section class="logo" scroll="contato">
 		<main>
 			<article class="column w2">
-				<div class="fb-like-box" data-href="https://www.facebook.com/arielpchara" data-width="488" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+				<div class="fb-like-box" data-href="https://www.facebook.com/arielpchara" data-width="488" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 			</article><article class="column w1">
 				<h1></h1>
 				<a href="mailto:ariel@pchara.com">ariel@pchara.com</a>
@@ -95,11 +97,11 @@
 	</section>
 
 	<aside class="side-menu">
-		<a class="orelha"></a>
+		<a class="orelha"><i class="fa fa-list"></i></a>
 		<nav class="menu">
 			<ul>
 				<li class="logo"></li>
-				<li><a href="#inicio">inicio</a></li>
+				<li><a href="#inicio">início</a></li>
 				<li><a href="#experiencias">experiências</a></li>
 				<li><a href="#portfolio">portfolio</a></li>
 				<li><a href="#contato">contato</a></li>

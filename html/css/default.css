@@ -1,16 +1,7 @@
-@font-face {
-  font-family: 'Icons';
-  src: url(../fonts/icons.eot);
-  src: url(../fonts/icons.eot?#iefix) format('embedded-opentype'), url(../fonts/icons.svg#icons) format('svg'), url(../fonts/icons.woff) format('woff'), url(../fonts/icons.ttf) format('truetype');
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-decoration: inherit;
-  text-transform: none;
-}
 body {
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Trocchi', serif;
 	font-weight: 300;
 }
 a {
@@ -21,9 +12,16 @@ ul {
 	list-style: none;
 	 margin: 1em 0 0;
 }
-h2,h2,h3,h4 {
-	font-family: 'Open Sans Condensed', sans-serif;
+h1,h2,h2,h3,h4 {
+	/*font-family: 'Open Sans Condensed', sans-serif;*/
+	font-family: 'Roboto', sans-serif;
 	margin-bottom: 0px;
+	line-height: .9em;
+	letter-spacing: -.05em;
+}
+h2 {
+	margin-bottom: 2em;
+	font-size: 3em;
 }
 aside.side-menu {
 	position: fixed;
@@ -44,7 +42,7 @@ aside.side-menu .orelha {
 	position: absolute;
 	line-height: 50px;
 	width: 50px;
-	right: -40px;
+	right: -50px;
 	top: 50%;
 	margin-top: -25px;
 	background: rgb(50,50,80);
@@ -52,10 +50,6 @@ aside.side-menu .orelha {
 	cursor: pointer;
 	color: #FFF;
 	text-align: center;
-	font-family: 'Icons';
-}
-aside.side-menu .orelha:before {
-  content: "\f00b";
 }
 aside.side-menu ul {
 	padding: 0;
@@ -151,11 +145,10 @@ section.um h1 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 300px;
-	margin: 180px 0 0 -150px;
+	width: 380px;
+	margin: 180px 0 0 -190px;
 	color: #FFF;
 	font-size: 4em;
-	font-family: 'Open Sans Condensed', sans-serif;
 }
 section.um .eu a {
 	position: absolute;
@@ -164,7 +157,6 @@ section.um .eu a {
 	left: 0;
 	color: #FFF;
 	font-size: 4em;
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	text-decoration: none;
 	-moz-opacity:0;
@@ -182,6 +174,7 @@ section.logo {
 	position: relative;
 	text-align: center;
 	padding: 5em 0;
+	background: #333;
 }
 
 section.logo h1 {
@@ -193,7 +186,7 @@ section.logo a {
 	text-decoration: none;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 2em;
-	color: #555;
+	color: #999;
 }
 
 section.dois {
@@ -213,16 +206,17 @@ section.dois article .ano {
 	margin-left: 22px;
 }
 section.dois article h3 {
-	margin: 0 0 1em -22px;
-	border-radius: 100% 0 100% 100%;
+	margin: 0 0 1em -17px;
+	border-radius: 100%;
 	text-align: center;
 	font-size: .8em;
 	color: #FFF;
 	background: #CCC;
-	width: 40px;
-	line-height: 40px;
+	width: 30px;
+	line-height: 30px;
 	position: relative;
 	border: 2px solid #FFF;
+	font-weight: 400;
 }
 section.dois article h3>div {
 	background: #CCC;
@@ -235,12 +229,14 @@ section.dois article h3>div {
 section.dois article .ano.hoje h3 {
 	background: #FC5;
 }
+/*
 section.dois article .ano:hover h3 {
 	color: #000;
 	border: 2px solid #FC0;
 	background: #FFF;
     transition: all 300ms linear;
 }
+*/
 section.dois article .job {
 	padding: 0 22px;
 }
@@ -280,7 +276,7 @@ section main {
 }
 section article.column {
 	display: inline-block;
-	height: 380px;
+	height: 300px;
 	margin: 4px;
 	overflow: hidden;
 	position: relative;
@@ -312,7 +308,7 @@ section.tres article {
  	width: 100%;
  	position: absolute;
 	background-size: cover;
-	background-position: left center;
+	background-position: right center;
 	-moz-opacity: .8;
 	-khtml-opacity:.8;
 	opacity: .8;
@@ -320,12 +316,13 @@ section.tres article {
  }
  section.tres article a {
  	position: absolute;
- 	top: 0;
+ 	bottom: 0;
  	right: 0;
  	color: #FFF;
  	line-height: 3em;
  	width: 3em;
  	background-color: #f49a60;
+ 	text-align: center;
  }
 section.tres article .details {
  	position: absolute;
@@ -333,9 +330,13 @@ section.tres article .details {
  	right: 0;
  	text-align: right;
  	width: 50%;
+ 	height: 100%;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     transition: all 300ms ease-in-out;
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
 }
 section.tres article .details span {
 	background-color: #16150a;
@@ -352,8 +353,7 @@ section.tres article .bottom {
 }
  section.tres article .title {
  	color: #FFF;
- 	line-height: 1.8em;
- 	padding: 0 .5em;
+ 	padding: .5em;
  	margin: 0;
  	background-color: #69bf84;
  	font-size: 1.1em;
@@ -363,13 +363,16 @@ section.tres article:hover .background {
 	-moz-opacity: 1;
 	-khtml-opacity: 1;
 	opacity: 1;
+	background-position: left center;
 }
 section.tres article:hover .details {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
 }
 section.tres article.fotografia:hover .background {
-	background-position: right center;
 }
 
 

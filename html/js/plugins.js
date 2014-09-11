@@ -5,7 +5,7 @@
 		$(scroll).scroll(function() {
 			var top = $(scroll).scrollTop();
 			element.css({
-				backgroundPosition : 'center ' + top/2 + 'px'
+				backgroundPosition : 'center ' + top/1.3 + 'px'
 			});
 		});
 		return this;
