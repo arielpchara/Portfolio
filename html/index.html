@@ -48,12 +48,12 @@
 	</section>
 
 	<section class="tres" scroll="portfolio" ng-controller="portfolio">
-		<h2>Portfolio</h2>
+		<h2><i class="fa fa-trophy"></i> Portfolio</h2>
 		<main>
 			<article ng-repeat="item in itens" class="{{item.tags | classes}} column w1" >
 				<div class="background" style="background-image: url('{{item.imagem}}');">
 				</div>
-				<div class="details"><a ng-if="item.link" href="{{item.link}}">
+				<div class="details"><a ng-if="item.link" href="{{item.link}}" target="_blank">
 					<i class="fa fa-external-link"></i></a>
 					<h4 class="title">{{item.titulo}}</h4>
 					<span ng-repeat="tag in item.tags">{{tag}} </span>
@@ -67,7 +67,7 @@
 			<div class="ligacao"></div>
 			<div class="ano hoje">
 				<div class="job">
-					<h2>Experiências</h2>
+					<h2><i class="fa fa-paper-plane-o"></i> Experiências</h2>
 				</div>
 				<h3>Hoje</h3>
 			</div>
@@ -85,13 +85,14 @@
 	</section>
 
 	<section class="logo" scroll="contato">
+		<h2 class="invert"><i class="fa fa-mobile"></i> Contato</h2>
 		<main>
-			<article class="column w2">
-				<div class="fb-like-box" data-href="https://www.facebook.com/arielpchara" data-width="488" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
-			</article><article class="column w1">
+			<article class="column w1">
 				<h1></h1>
 				<a href="mailto:ariel@pchara.com">ariel@pchara.com</a>
 				<a href="tel:+554891360411">+55 48 9136 0411</a>
+			</article><article class="column w2">
+				<div class="fb-like-box" data-href="https://www.facebook.com/arielpchara" data-width="488" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 			</article>
 		</main>
 	</section>
