@@ -378,9 +378,15 @@ section.tres article:hover .details {
 section.tres article.fotografia:hover .background {
 }
 
+.fb-like-box { width: 100%; }
+.fb-like-box>span { width: 100% !important; }
+.fb-like-box>span iframe { width: 100% !important; }
 
 @media only screen and (max-width : 768px) {
 	
+h2 {
+	font-size: 2em;
+}
 	section.um .eu {
 		width: 200px;
 		height: 200px;
