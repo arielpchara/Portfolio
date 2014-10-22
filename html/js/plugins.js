@@ -46,6 +46,7 @@
 	window.addEventListener("hashchange", function(){
 		var hash = location.hash;
 		$.scrollToHash(hash);
+		ga('send','pageview',location.pathname+location.search+location.hash);
 	}, false);
 	
 	$.showMenu = function(area,menu,proximo){
