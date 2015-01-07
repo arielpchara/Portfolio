@@ -136,13 +136,13 @@ section.um .eu {
 	left: 50%;
 	width: 300px;
 	height: 300px;
-	margin: -180px 0 0 -180px;
+	margin: -150px 0 0 -150px;
 	background: url("../img/eu.jpg") center no-repeat;
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
 	border-radius: 100%;
 	background-size: cover;
-	border: 30px solid #FFF;
+box-shadow: 1px 1px 10px rgba(0,0,0,.5);
 }
 section.um h1 {
 	position: absolute;
@@ -158,16 +158,17 @@ section.um .eu a {
 	width: 100%;
 	line-height: 300px;
 	left: 0;
-	color: #FFF;
-	font-size: 4em;
+	color: rgba(255,255,255,.5);
+	font-size: 0.2em;
 	font-weight: 600;
 	text-decoration: none;
 	-moz-opacity:0;
 	-khtml-opacity: 0;
 	opacity: 0;
-    transition: opacity 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 section.um .eu:hover a {
+	font-size: 4em;
 	-moz-opacity: 1;
 	-khtml-opacity: 1;
 	opacity: 1;
