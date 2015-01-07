@@ -1,4 +1,11 @@
-[ {
+[ 
+{
+	"name" : "EZ Commerce",
+	"code" : ["HTML","CSS","SASS","JavaScript"],
+	"time" : ["2014"],
+	"do" : "Widgets!",
+	"level" : "Desenvolvedor Front-End"
+},{
 	"name" : "Ariel Pchara - Web Developer",
 	"code" : ["PHP","MySql","MongoDB","HTML5","CSS3","Angular.js","jQuery","Wordpress","CakePHP","SCRUM"],
 	"time" : ["2014"],
