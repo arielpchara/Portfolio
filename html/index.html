@@ -160,17 +160,22 @@
 		<h2><i class="fa fa-instagram"></i> Instagram</h2>
 		<div class="feed" ng-controller='insta'>
 			<a ng-repeat='item in list'  title="{{item.caption.text}}" class="insta-item" href="{{item.link}}" target="instagram"><img ng-src="{{item.images.low_resolution.url}}" alt="{{item.caption.text}}">
-			<span>{{item.caption.text}}</span>
 			</a>
 		</div>
 	</section>
 
-	<section class="logo" scroll="contato">
-		<h2 class="invert"><i class="fa fa-mobile"></i> Contato</h2>
+	<section class="logo" scroll="share">
+		<h2 class=""><i class="fa fa-facebook-square"></i> Compatilhe!</h2>
 		<main>
 			<article>
-				<a href="mailto:ariel@pchara.com">ariel@pchara.com</a>
-				<a href="tel:+554891360411">+55 48 9136 0411</a>
+			
+			<p>
+				<div class="fb-like" data-href="http://ariel.pchara.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+			</p>
+
+			<p>
+				<div class="fb-comments" data-href="http://ariel.pchara.com/" data-width="100%" data-numposts="10" data-colorscheme="light"></div>
+			</p>
 			</article>
 		</main>
 	</section>
@@ -184,7 +189,7 @@
 				<li><a href="#experiencias">experiências</a></li>
 				<li><a href="#portfolio">portfolio</a></li>
 				<li><a href="#instagram">instagram</a></li>
-				<li><a href="#contato">contato</a></li>
+				<li><a href="#share">compartilhe</a></li>
 			</ul>
 		</nav>
 	</aside>

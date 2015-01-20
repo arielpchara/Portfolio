@@ -178,6 +178,9 @@ section {
       height: 300px;
       margin: -150px 0 0 -150px;
       background: url("../img/eu.jpg") center no-repeat;
+
+      border: 12px solid #FFF;
+
       -webkit-border-radius: 100%;
       -moz-border-radius: 100%;
       border-radius: 100%;
@@ -221,7 +224,13 @@ section {
     position: relative;
     text-align: center;
     padding: 5em 0;
-    background: #333;
+    background: #FFF;
+    h2 {
+      color: #999;
+    }
+    p {
+      margin-bottom: 50px;
+    }
     h1 {
       background: url("../img/logoarielpchara.png") center no-repeat;
       height: 200px;
@@ -231,7 +240,7 @@ section {
       text-decoration: none;
       font-family: 'Open Sans Condensed', sans-serif;
       font-size: 2em;
-      color: #999;
+      color: #444;
       display: block;
     }
   }
