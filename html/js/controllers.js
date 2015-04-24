@@ -50,7 +50,6 @@ portifa.controller('insta',['$scope','$http',function($scope, $http){
 	$scope.loadig = true;
 	var link = 'https://api.instagram.com/v1/users/31132697/media/recent/?client_id=831e367d117c42d4ac88f8fd14aef654&callback=JSON_CALLBACK';
 	$http.jsonp(link).success(function(response){
-		console.log(response);
 		$scope.list = response.data;
 		$scope.loadig = false;
 	});
