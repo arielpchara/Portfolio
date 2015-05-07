@@ -16,9 +16,8 @@ angular.module('PcharaDiretivas',[])
         link: function(scope, element, attrs) {
           var id = $parse(attrs.focusMe);
           element.bind('keydown',function(e){
-            console.log(e.keyCode);
             if( e.keyCode === 13 ){
-                scope.$emit('addCommand');
+              scope.$emit('terminal');
             }else if( e.keyCode === 9 ){
                 
             }

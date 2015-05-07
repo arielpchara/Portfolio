@@ -7,9 +7,8 @@ angular.module('Portfolio',['PcharaDiretivas','CommandsModule'])
             "Enter \"$ help\" to help"
         ];
         $scope.command = '';
-        $scope.$on('addCommand',function(){
+        $scope.$on('terminal',function(){
             var response = Exec( $scope.command );
-            console.log(response);
             $scope.logs.push( response.mothod );
             $scope.command = '';
             $scope.$digest();
