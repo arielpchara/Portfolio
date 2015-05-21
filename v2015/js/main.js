@@ -7,12 +7,27 @@ angular.module('CommandsModule',['ngResource'])
     .factory('Exec', ['Commands', function(Commands) {
         var data = Commands.query();
         return function(command){
-            return _(data).find( function(value) {
+            var c = _(data).find( function(value) {
               return value.command === command;
             });
+            if( c ){
+                return c;
+            }else{
+                return false;
+            }
         };
         
     }]);
+
+
+var HelpCommand = function(){
+    var self = this;
+
+    self.exec = function(){
+        return false;
+    };
+
+};
 angular.module('PcharaDiretivas',[])
     .directive('focusInput',function($timeout, $parse) {
       return {
@@ -31,9 +46,8 @@ angular.module('PcharaDiretivas',[])
         link: function(scope, element, attrs) {
           var id = $parse(attrs.focusMe);
           element.bind('keydown',function(e){
-            console.log(e.keyCode);
             if( e.keyCode === 13 ){
-                scope.$emit('addCommand');
+              scope.$emit('terminal');
             }else if( e.keyCode === 9 ){
                 
             }
@@ -51,9 +65,8 @@ angular.module('Portfolio',['PcharaDiretivas','CommandsModule'])
             "Enter \"$ help\" to help"
         ];
         $scope.command = '';
-        $scope.$on('addCommand',function(){
+        $scope.$on('terminal',function(){
             var response = Exec( $scope.command );
-            console.log(response);
             $scope.logs.push( response.mothod );
             $scope.command = '';
             $scope.$digest();
