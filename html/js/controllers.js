@@ -55,7 +55,6 @@ portifa.controller('insta',['$scope','$http',function($scope, $http){
 	});
 }]);
 
-
 portifa.filter('plus', function() {
 	return function(value) {
 		return value.join(" + ");

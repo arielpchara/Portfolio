@@ -1,5 +1,14 @@
 [
   {
+    "titulo": "Livro das receitas do Concurso Culinaria do Diario Gaúcho",
+    "tempo": "Abril de 2015",
+    "imagem": "img/portfolio/consurso-culinaria.png",
+    "link":false,
+    "tags": [
+      "Illustrator"
+    ]
+  },
+  {
     "titulo": "Gata Tudo de Bom 2014",
     "tempo": "Dezembro de 2014",
     "imagem": "img/portfolio/gatatudodebom2014.png",
@@ -39,20 +48,20 @@
       "SEO"
     ]
   },
-  {
-    "titulo": "Luddic Design",
-    "tempo": "Em andamento",
-    "imagem": "img/portfolio/luddic.jpg",
-    "link": false,
-    "tags": [
-      "site",
-      "restrito",
-      "css3",
-      "html5",
-      "PHP",
-      "CakePHP"
-    ]
-  },
+  // {
+  //   "titulo": "Luddic Design",
+  //   "tempo": "Em andamento",
+  //   "imagem": "img/portfolio/luddic.jpg",
+  //   "link": false,
+  //   "tags": [
+  //     "site",
+  //     "restrito",
+  //     "css3",
+  //     "html5",
+  //     "PHP",
+  //     "CakePHP"
+  //   ]
+  // },
   {
     "titulo": "Santo Antonio de Lisboa",
     "tempo": "2014",
@@ -76,7 +85,7 @@
     ]
   },
   {
-    "titulo": "Boi",
+    "titulo": "Boi da cara preta",
     "tempo": "2014",
     "imagem": "img/fotos/foto3.jpg",
     "link": "http://instagram.com/p/qZ0zApqipu/",
