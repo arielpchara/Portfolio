@@ -3,6 +3,9 @@ body {
   /*font-family: 'Open Sans', sans-serif;*/
   font-family: 'Trocchi', serif;
   font-weight: 300;
+  &.menu-show {
+    overflow: hidden;
+  }
 }
 
 a {
@@ -45,6 +48,7 @@ aside.side-menu {
   &.show {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    overflow: auto;
   }
   .orelha {
     position: absolute;
@@ -66,7 +70,7 @@ aside.side-menu {
     width: 100%;
     li.logo {
       display: block;
-      height: 50px;
+      height: 64px;
       background: url('../img/logo-white.png') center no-repeat;
       background-size: contain;
     }
@@ -82,8 +86,8 @@ aside.side-menu ul li a {
   display: block;
   line-height: 2.2em;
   color: #FFF;
-  text-transform: uppercase;
-  font-size: 2em;
+  // text-transform: uppercase;
+  font-size: 1.6em;
   padding: 0 1em;
   transition: all 600ms ease-in;
   text-decoration: none;
@@ -118,6 +122,34 @@ section {
   display: block;
   background: #FFF;
     text-align: center;
+  &.projetos {
+    padding: 2em 0 4em;
+    background: #ebe8e2;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px white solid;
+    box-shadow: 0 10px 40px rgba(black, .2) inset;
+    .center {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+    a {
+      display: inline-block;
+      color: #24516e;
+      text-decoration: none;
+      margin: 0 1em;
+      i.fa, img {
+        margin: 0 auto;
+        max-width: 96px;
+        display: block;
+        font-size: 5em;
+      }
+      small {
+        font-size: .6em;
+      }
+    }
+  }
   &.insta {
     padding: 100px 0;
     overflow: hidden;
@@ -143,7 +175,7 @@ section {
         text-decoration: none;
         font-size: .8em;
         text-align: left;
-        
+
         img {
           width: 100%;
           height: 100%;
@@ -313,7 +345,7 @@ section {
   }
   article.column {
     display: inline-block;
-    height: 300px;
+    height: 200px;
     margin: 4px;
     overflow: hidden;
     position: relative;

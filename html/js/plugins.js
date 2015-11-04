@@ -1,5 +1,5 @@
 (function($) {
-	
+
 	$.fn.parallax = function(scroll) {
 		var element = $(this);
 		$(scroll).scroll(function() {
@@ -14,13 +14,14 @@
 	$.fn.parallaxTop = function(){
 		var element = $(this);
 		$(document).scroll(function() {
-			var top = $(document).scrollTop();
+
+			var top = $(document).scrollTop() - element.offset().top;
 			element.css({
 				top : top/1.5 + 'px'
 			});
 		});
 	};
-	
+
 	$.fn.fullHeight = function() {
 		$docHeight = $(window).height();
 		$headHeight = $("header").height();
@@ -32,7 +33,7 @@
 		return this;
 	};
 
-	
+
 	$.scrollToHash = function(hash,time){
 		var link = hash.replace('#', '');
 		time = time==null?1000:time;
@@ -42,13 +43,13 @@
 		}
 		$(document.body).scrollTo($("section[scroll='"+link+"']"), time);
 	};
-	
+
 	window.addEventListener("hashchange", function(){
 		var hash = location.hash;
 		$.scrollToHash(hash);
 		ga('send','pageview',location.pathname+location.search+location.hash);
 	}, false);
-	
+
 	$.showMenu = function(area,menu,proximo){
 		$(area).mousemove(function(event){
 			if( event.pageX < proximo ){
@@ -56,5 +57,5 @@
 			}
 		});
 	};
-	
+
 })(jQuery);
