@@ -26,6 +26,27 @@ portifa.controller('profile', [ '$scope', '$http', 'Profile',
 
 **/
 
+portifa.directive('circularMenu',function () {
+	return {
+		link: function (scope, element) {
+			var timerout;
+			element.on('mouseover',function (ev) {
+				clearTimeout(timerout);
+				element.find('.circular-menu li').map(function (i, li, total) {
+					li.style.transform = 'rotateZ('+ (i*15) +'deg) translateX(100%)';
+				});
+			})
+			.on('mouseout',function () {
+				timerout = setTimeout(function () {
+					element.find('.circular-menu li').map(function (i, li, total) {
+							li.style.transform = '';
+					});
+				},1000);
+			})
+		}
+	}
+})
+
 
 portifa.factory('Portfolio', [ '$resource', function($resource) {
 	return $resource('data/portfolio.json');
