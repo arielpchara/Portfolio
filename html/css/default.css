@@ -200,7 +200,7 @@ section {
       width: 100%; }
     section.um .circulo-central {
       position: absolute;
-      top: 50%;
+      top: 45%;
       left: 50%;
       margin: -162px 0 0 -162px;
       width: 324px;
@@ -216,7 +216,9 @@ section {
       border-radius: 100%;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      border: 5px solid #282A05;
+      margin: -5px; }
       section.um .eu a {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.2em;
