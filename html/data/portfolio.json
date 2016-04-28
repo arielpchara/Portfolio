@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Easy Checkout da EZ Commerce",
+    "tempo": "2015",
+    "imagem": "img/portfolio/easy01.jpg",
+    "tags": [
+      "Front-end", "Checkout", "UX"
+    ]
+  },
+  {
     "titulo": "Controlando o trilho de um scanner velho",
     "tempo": "Outubro de 2015",
     "imagem": "img/portfolio/arduino.gif",
