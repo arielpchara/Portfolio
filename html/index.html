@@ -163,7 +163,7 @@
 					</a>
 				</div>
 			</div>
-			<h1>Ariel Pchara</h1>
+			<!-- <h1>Ariel Pchara</h1> -->
 		</div>
 	</section>
 
@@ -173,16 +173,19 @@
 			<main>
 				<article>
 					<a href="https://github.com/arielpchara">
-						<img src="http://uxrepo.com/static/icon-sets/mfg-labs/svg/github.svg" alt="github">
-						<small>https://github.com/arielpchara</small>
+						<img src="./img/mark-github.png" alt="github">
+						<small>https://github.com/</small> <br>
+						arielpchara
 					</a>
 					<a href="https://www.npmjs.com/~pchara">
-						<img src="https://www.npmjs.com/static/images/npm-logo.svg" alt="npm">
-						<small>https://www.npmjs.com/~pchara</small>
+						<img src="./img/npm-logo.png" alt="npm">
+						<small>https://www.npmjs.com/</small> <br>
+						~pchara
 					</a>
 					<a href="https://bitbucket.org/pchara/">
-						<img src="http://uxrepo.com/static/icon-sets/zocial/svg/bitbucket.svg" alt="bitbucket">
-						<small>https://bitbucket.org/pchara/</small>
+						<img src="./img/bitbucket-4096-black.png" alt="bitbucket">
+						<small>https://bitbucket.org/</small> <br>
+						pchara
 					</a>
 				</article>
 			</main>
@@ -221,7 +224,7 @@
 						<small>{{exp.level}}</small>
 					</em>
 					<ul>
-						<li ng-repeat="code in exp.code">{{code}}</li>
+						<li ng-repeat="code in exp.code track by $index">{{code}}</li>
 					</ul>
 				</div>
 				<h3>{{exp.time[0]}}</h3>

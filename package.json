@@ -1,0 +1,10 @@
+{
+  "name": "Portfolio",
+  "private": true,
+  "version": "1.1.0",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-live-server": "0.0.30",
+    "gulp-sass": "^2.3.2"
+  }
+}

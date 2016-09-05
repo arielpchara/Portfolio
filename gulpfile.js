@@ -1,8 +1,8 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     // plumber = require('gulp-plumber'),
-    gls = require('gulp-live-server'),
-    nunjucks = require('gulp-nunjucks-html');
+    gls = require('gulp-live-server');
+    // nunjucks = require('gulp-nunjucks-html');
 
     gulp.task('serve', function() {
         var server = gls.static(['./html/','./ static/'],8080);
@@ -27,4 +27,4 @@ var gulp = require('gulp'),
                 .pipe(gulp.dest('html/css'));
     });
 
-    gulp.task('default',['scss','html','serve',]);
+    gulp.task('default',['scss','serve']);

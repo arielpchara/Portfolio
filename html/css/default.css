@@ -5,6 +5,7 @@
     -webkit-transform: rotateZ(-46deg); }
   100% {
     -webkit-transform: rotateZ(-45deg); } }
+
 @-moz-keyframes ocilamenu {
   0% {
     -moz-transform: rotateZ(-45deg); }
@@ -12,6 +13,7 @@
     -moz-transform: rotateZ(-46deg); }
   100% {
     -moz-transform: rotateZ(-45deg); } }
+
 @keyframes ocilamenu {
   0% {
     -webkit-transform: rotateZ(-45deg);
@@ -31,6 +33,7 @@
     -ms-transform: rotateZ(-45deg);
     -o-transform: rotateZ(-45deg);
     transform: rotateZ(-45deg); } }
+
 body {
   margin: 0;
   /*font-family: 'Open Sans', sans-serif;*/
@@ -47,11 +50,14 @@ ul {
   list-style: none;
   margin: 6px 0 0; }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   /*font-family: 'Open Sans Condensed', sans-serif;*/
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 0px;
-  line-height: .9em;
+  margin-bottom: 0;
+  line-height: 0.9em;
   letter-spacing: -.05em; }
 
 h2 {
@@ -68,9 +74,9 @@ aside.side-menu {
   width: 100%;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
-  -webkit-transition-duration: .1s;
+  -webkit-transition-duration: 0.1s;
   /* Safari */
-  transition-duration: .1s; }
+  transition-duration: 0.1s; }
   aside.side-menu.show {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -126,7 +132,7 @@ aside.side-menu ul li a {
     background: rgba(255, 255, 225, 0.1);
     transition: all 200ms ease-in-out; }
     aside.side-menu ul li a:hover i {
-      opacity: .5;
+      opacity: 0.5;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
       transition: all 500ms ease-out; }
@@ -142,23 +148,33 @@ section {
     overflow: hidden;
     border-top: 1px white solid;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2) inset; }
+    section.projetos main {
+      max-width: 800px; }
+      section.projetos main article {
+        display: flex; }
     section.projetos .center {
       position: relative;
       height: 100%;
       width: 100%;
       padding: 50px 0; }
     section.projetos a {
-      display: inline-block;
+      width: 100%;
+      display: block;
       color: #24516e;
       text-decoration: none;
-      margin: 1em; }
-      section.projetos a i.fa, section.projetos a img {
+      padding: 0 1em;
+      font-size: 1.6em; }
+      section.projetos a i.fa,
+      section.projetos a img {
         margin: 0 auto;
         max-width: 96px;
         display: block;
         font-size: 5em; }
       section.projetos a small {
-        font-size: .6em; }
+        font-size: 0.6em;
+        word-break: break-all;
+        text-align: left;
+        line-height: 0.75em; }
   section.insta {
     padding: 100px 0;
     overflow: hidden;
@@ -181,7 +197,7 @@ section {
         width: 20%;
         color: #FFF;
         text-decoration: none;
-        font-size: .8em;
+        font-size: 0.8em;
         text-align: left; }
         section.insta .feed .insta-item img {
           width: 100%;
@@ -189,7 +205,7 @@ section {
           display: block; }
   section.um {
     position: relative;
-    background: url("../img/janela.jpg") top center no-repeat;
+    background: url("../img/background.png") top center no-repeat;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -209,14 +225,15 @@ section {
       position: absolute;
       width: 100%;
       height: 100%;
-      background: url("../img/eu_01.jpg") center no-repeat;
-      background-size: cover;
+      background: url("../img/logoarielpchara.png") center no-repeat;
+      background-size: 50%;
       -webkit-border-radius: 100%;
       -moz-border-radius: 100%;
       border-radius: 100%;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      background-color: white; }
       section.um .eu a {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.2em;
@@ -244,7 +261,7 @@ section {
       -moz-animation: ocilamenu 2s cubic-bezier(0.58, 0.03, 0.47, 0.94) infinite;
       animation: ocilamenu 2s cubic-bezier(0.58, 0.03, 0.47, 0.94) infinite; }
       section.um .circular-menu li {
-        transition: .3s all;
+        transition: 0.3s all;
         text-align: left;
         display: block;
         font-size: 1em;
@@ -259,17 +276,17 @@ section {
         line-height: 52px;
         perspective: 500px; }
         section.um .circular-menu li a {
-          transition: .3s all;
+          transition: 0.3s all;
           display: inline-block;
           color: white;
           text-decoration: none;
           padding: 0 20px;
           margin-left: -4px;
-          font-size: .9em;
+          font-size: 0.9em;
           text-transform: capitalize;
           transform: rotateY(20deg);
           transform-origin: 0;
-          opacity: .7; }
+          opacity: 0.7; }
           section.um .circular-menu li a:hover {
             font-size: 1.4em;
             opacity: 1;
@@ -304,7 +321,7 @@ section {
       display: block; }
   section.dois {
     padding: 2em 0 2em 50%;
-    margin-left: -150px; }
+    margin-left: -300px; }
     section.dois article {
       position: relative;
       overflow: hidden;
@@ -318,7 +335,7 @@ section {
         margin: 0 0 1em -28px;
         border-radius: 100%;
         text-align: center;
-        font-size: .9em;
+        font-size: 0.9em;
         color: #FFF;
         background: #CCC;
         width: 40px;
@@ -340,7 +357,7 @@ section {
         section.dois article .job ul {
           overflow: hidden; }
           section.dois article .job ul li {
-            font-size: .9em;
+            font-size: 0.9em;
             float: left;
             margin: 1px;
             padding: 3px 10px;
@@ -392,9 +409,9 @@ section {
         position: absolute;
         background-size: cover;
         background-position: right center;
-        -moz-opacity: .8;
-        -khtml-opacity: .8;
-        opacity: .8;
+        -moz-opacity: 0.8;
+        -khtml-opacity: 0.8;
+        opacity: 0.8;
         transition: all 300ms ease-in-out; }
       section.tres article a {
         position: absolute;
@@ -424,14 +441,14 @@ section {
           margin: 1px;
           float: right;
           padding: 2px 4px;
-          font-size: .8em; }
+          font-size: 0.8em; }
       section.tres article .bottom {
         position: absolute;
         bottom: 0;
         left: 0; }
       section.tres article .title {
         color: #FFF;
-        padding: .5em;
+        padding: 0.5em;
         margin: 0;
         background-color: #69bf84;
         font-size: 1.1em; }
@@ -465,7 +482,6 @@ section.dois article .ano:hover h3 {
 @media only screen and (max-width: 768px) {
   h2 {
     font-size: 2em; }
-
   section.um .eu {
     width: 200px;
     height: 200px;
@@ -477,7 +493,6 @@ section.dois article .ano:hover h3 {
   section.um .eu a {
     line-height: 200px;
     font-size: 3em; }
-
   aside.side-menu .orelha {
     bottom: 0;
     border-radius: 0 10px 0 0;
@@ -489,11 +504,7 @@ section.dois article .ano:hover h3 {
     width: 100%; }
     aside.side-menu ul li a {
       font-size: 1.5em; }
-
   section.insta .feed .insta-item {
     width: 33.3333%; }
-
   section article.column.w1, section article.column.w2 {
     width: 75%; } }
-
-/*# sourceMappingURL=default.css.map */
