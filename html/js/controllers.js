@@ -33,7 +33,7 @@ portifa.directive('circularMenu',function () {
 			element.on('mouseover',function (ev) {
 				clearTimeout(timerout);
 				element.find('.circular-menu li').map(function (i, li, total) {
-					li.style.transform = 'rotateZ('+ (i*15) +'deg) translateX(100%)';
+					li.style.transform = 'rotateZ('+ (i*10) +'deg) translateX(100%)';
 				});
 			})
 			.on('mouseout',function () {

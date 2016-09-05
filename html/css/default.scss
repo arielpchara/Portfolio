@@ -1,15 +1,15 @@
 @import './stylesheets/bourbon';
 @include keyframes(ocilamenu) {
     0% {
-        @include transform(rotateZ(-45deg));
+        @include transform(rotateZ(-22deg));
     }
 
     50% {
-        @include transform(rotateZ(-46deg));
+        @include transform(rotateZ(-29deg));
     }
 
     100% {
-        @include transform(rotateZ(-45deg));
+        @include transform(rotateZ(-22deg));
     }
 }
 
@@ -156,8 +156,8 @@ section {
         background: #ebe8e2;
         position: relative;
         overflow: hidden;
-        border-top: 1px white solid;
-        box-shadow: 0 10px 40px rgba(black, .2) inset;
+        // border-top: 1px white solid;
+        // box-shadow: 0 10px 40px rgba(black, .2) inset;
 
         main {
             max-width: 800px;
@@ -302,7 +302,7 @@ section {
             margin: -162px 0 0 -162px;
             height: 324px;
             width: 324px;
-            transform: rotateZ(-50deg);
+            transform: rotateZ(-20deg);
             // z-index: 1;
             @include animation(ocilamenu 2.0s cubic-bezier(.58,.03,.47,.94) infinite);
 
@@ -329,11 +329,12 @@ section {
                     text-decoration: none;
                     padding: 0 20px;
                     margin-left: -4px;
-                    font-size: 0.9em;
+                    font-size: 1.2em;
                     text-transform: capitalize;
                     transform: rotateY(20deg);
                     transform-origin: 0;
-                    opacity: 0.7;
+                    opacity: 0.9;
+                    text-shadow: -1px 1px 0 #bbb;
 
                     &:hover {
                         font-size: 1.4em;
@@ -361,7 +362,7 @@ section {
         position: relative;
         text-align: center;
         padding: 5em 0;
-        background: #FFF;
+        background: #323232;
 
         h2 {
             color: #999;
