@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    plumber = require('gulp-plumber'),
+    // plumber = require('gulp-plumber'),
     gls = require('gulp-live-server'),
     nunjucks = require('gulp-nunjucks-html');
 
@@ -22,7 +22,7 @@ var gulp = require('gulp'),
     gulp.task('scss',function(){
         gulp.watch('html/css/*.scss', ['scss']);
         return gulp.src('html/css/*.scss')
-                .pipe(plumber())
+                // .pipe(plumber())
                 .pipe(sass({errLogToConsole: true}))
                 .pipe(gulp.dest('html/css'));
     });
