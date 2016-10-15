@@ -1,4 +1,0 @@
-#!/bin/bash
-NOW=$(date +"%m-%d-%Y %H:%M")
-git add . && git commit -a -m "commit $NOW" && git push
-ssh pchara.com 'cd Portfolio && git pull'
