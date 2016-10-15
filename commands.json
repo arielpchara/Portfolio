@@ -1,6 +1,10 @@
 [
     {
         "command":"help",
-        "mothod":"Help"       
+        "mothod":"Help: \nCool, i can help you."
+    },
+    {
+        "command":"bye",
+        "mothod":"Bye bye"
     }
 ]
