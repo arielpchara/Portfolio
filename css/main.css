@@ -21,6 +21,8 @@ body {
   -webkit-animation: blink 0.5s infinite;
   -moz-animation: blink 0.5s infinite;
   animation: blink 0.5s infinite; }
+  .blink:before {
+    content: "|"; }
 
 @-webkit-keyframes blink {
   from {
