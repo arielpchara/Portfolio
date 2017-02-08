@@ -49,11 +49,7 @@ angular.module('PcharaDiretivas', [])
                     if (e.keyCode === 13) {
                         scope.$emit('terminal');
                     } else if (e.keyCode === 9) {
-                        // console.log(e.keyCode);
                         element[0].focus();
-                        // setTimeout(function() {
-                        //     console.log(element[0].focus);
-                        // }, 500);
                         return false;
                     }
                     return true;
