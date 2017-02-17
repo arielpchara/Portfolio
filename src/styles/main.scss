@@ -1,0 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+@import "parts/vars";
+body {
+    font-family: 'Droid Sans Mono', monospace;
+    font-size: 11px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: $color-background;
+    color: $color-font;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}

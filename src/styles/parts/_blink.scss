@@ -1,0 +1,15 @@
+.blink {
+    @include animation(blink 0.5s infinite);
+    &:before {
+        content: "|";
+    }
+}
+
+@include keyframes(blink) {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
