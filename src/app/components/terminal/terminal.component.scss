@@ -1,0 +1,75 @@
+
+.terminal {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    overflow: hidden;
+    .terminal-header {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ededed+3,cccccc+100 */
+        background: rgb(255,255,255); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 3%, rgba(204,204,204,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(237,237,237,1) 3%,rgba(204,204,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(237,237,237,1) 3%,rgba(204,204,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+        padding: 4px;
+        font-family: 'Oxygen', sans-serif;
+        display: flex;
+        border-bottom: 1px solid #999;
+        .title {
+            text-align: center;
+            width: 100%;
+            line-height: 20px;
+            font-size: 12px;
+            text-indent: -24px * 3;
+            img {
+                vertical-align: middle;
+            }
+        }
+        .buttons {
+            width: 24px * 3;
+            display: flex;
+            .button {
+                $size: 12px;
+                border-radius: 50px;
+                margin: 2px 5px;
+                background: gray;
+                border: 1px solid #CCC;
+                height: $size;
+                width: $size;
+            }
+            .close {
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3535+0,ff5e5e+100 */
+                background: rgb(255,53,53); /* Old browsers */
+                background: -moz-linear-gradient(top, rgba(255,53,53,1) 0%, rgba(255,94,94,1) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, rgba(255,53,53,1) 0%,rgba(255,94,94,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, rgba(255,53,53,1) 0%,rgba(255,94,94,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3535', endColorstr='#ff5e5e',GradientType=0 ); /* IE6-9 */
+                border-color: rgba(255,53,53,1);
+            }
+            .minimize {
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffcf35+0,ffe15e+100 */
+                background: rgb(255,207,53); /* Old browsers */
+                background: -moz-linear-gradient(top, rgba(255,207,53,1) 0%, rgba(255,225,94,1) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, rgba(255,207,53,1) 0%,rgba(255,225,94,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, rgba(255,207,53,1) 0%,rgba(255,225,94,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcf35', endColorstr='#ffe15e',GradientType=0 ); /* IE6-9 */
+                border-color: rgba(255,207,53,1);
+            }
+            .maximize {
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#73d62c+0,8aea56+100 */
+                background: rgb(115,214,44); /* Old browsers */
+                background: -moz-linear-gradient(top, rgba(115,214,44,1) 0%, rgba(138,234,86,1) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, rgba(115,214,44,1) 0%,rgba(138,234,86,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, rgba(115,214,44,1) 0%,rgba(138,234,86,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73d62c', endColorstr='#8aea56',GradientType=0 ); /* IE6-9 */
+                border-color: rgba(115,214,44,1);
+            }
+        }
+    }
+    .terminal-container {
+        color: white;
+        padding: 10px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 16px;
+    }
+}

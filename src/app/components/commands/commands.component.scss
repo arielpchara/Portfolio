@@ -1,0 +1,20 @@
+.command-bar {
+    display: flex;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    span {
+        margin-right: 5px;
+    }
+}
+input {
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 0;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    &:focus {
+        outline: none;
+    }
+}
