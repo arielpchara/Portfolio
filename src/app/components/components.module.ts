@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TerminalComponent } from './terminal/terminal.component';
 import { CommandsComponent } from './commands/commands.component';
+import { RatingSkillsComponent } from './rating-skills/rating-skills.component';
 
 @NgModule({
   imports: [
@@ -9,10 +10,12 @@ import { CommandsComponent } from './commands/commands.component';
   ],
   declarations: [
     TerminalComponent,
-    CommandsComponent
+    CommandsComponent,
+    RatingSkillsComponent
   ],
   exports: [
-    TerminalComponent
+    TerminalComponent,
+    RatingSkillsComponent
   ]
 })
 export class ComponentsModule { }

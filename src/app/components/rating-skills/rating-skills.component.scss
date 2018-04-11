@@ -1,0 +1,6 @@
+.point {
+    color: grey;
+    &.rated {
+        color: cyan;
+    }
+}
