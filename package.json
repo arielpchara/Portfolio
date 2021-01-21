@@ -1,36 +1,11 @@
 {
-  "name": "angular-firebase-hosting-pchara",
-  "version": "0.0.0",
+  "name": "portfolio",
+  "version": "3.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
-    "@angular/animations": "^5.2.0",
-    "@angular/common": "^5.2.0",
-    "@angular/compiler": "^5.2.0",
-    "@angular/core": "^5.2.0",
-    "@angular/forms": "^5.2.0",
-    "@angular/platform-browser": "^5.2.0",
-    "@angular/platform-browser-dynamic": "^5.2.0",
-    "@angular/router": "^5.2.0",
-    "core-js": "^2.4.1",
-    "rxjs": "^5.5.6",
-    "tslib": "^1.9.0",
-    "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.801.2",
-    "@angular/cli": "^8.1.2",
-    "@angular/compiler-cli": "^5.2.0",
-    "@angular/language-service": "^5.2.0",
-    "codelyzer": "^5.0.1",
-    "typescript": "~2.5.3"
   }
 }
